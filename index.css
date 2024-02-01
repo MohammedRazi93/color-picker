@@ -307,6 +307,9 @@ padding: 4px;
     }
 }
 @media(max-width: 412px){
+    .container{
+        height: 70vh;
+    }
     textarea{
         margin-left: 18px;
         width: 90%;
