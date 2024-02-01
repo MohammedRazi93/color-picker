@@ -278,17 +278,41 @@ textarea {
     .colorbox {
         width: 73%;
     }
+       textarea{
+        margin-left: 45px;
+    }
+    button{
+padding: 4px;
+    }
 }
 
 @media(max-width: 450px) {
     .colorbox {
         width: 80%;
     }
+       textarea{
+        margin-left: 37px;
+    }
+    button{
+        width: 20%;
+    }
 }
 
 @media(max-width: 425px) {
     .colorbox {
         width: 86%;
+    }
+       textarea{
+        margin-left: 37px;
+    }
+}
+@media(max-width: 412px){
+    textarea{
+        margin-left: 18px;
+        width: 90%;
+    }
+      button{
+        width: 21%;
     }
 }
 
