@@ -308,7 +308,7 @@ padding: 4px;
 }
 @media(max-width: 412px){
     .container{
-        height: 70vh;
+        height: 73vh;
     }
     textarea{
         margin-left: 18px;
