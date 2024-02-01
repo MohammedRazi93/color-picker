@@ -310,9 +310,16 @@ padding: 4px;
     textarea{
         margin-left: 18px;
         width: 90%;
+        height: 28vh;
     }
       button{
         width: 21%;
+    }
+    .coma{
+        margin-left: 60px;
+    }
+    .coma2{
+        margin-left: 15px;
     }
 }
 
