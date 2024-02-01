@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --headings-font-family: 'Montserrat', sans-serif;
+    --body-font-family: 'Lato', sans-serif;
+}
+  
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(34, 45, 195);
+    /* background-image: url(images/bg4.jpg); */
+    /* background-position: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #c44f35, #140b63, #6458c0, #60c272);
+    background-size: 400% 400%;
+    animation: gradientChange 8s linear infinite;
+}
+
+@keyframes gradientChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    25%{
+        background-position: 50% 25%;
+    }
+    50% {
+        background-position: 50% 70%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    width: 55%;
+    height: 83vh;
+    background-color: rgba(216, 191, 191, 0.315); 
+    border-radius: 10px;
+    padding: 9px;
+    overflow: hidden;
+}
+
+.container div {
+    font-family: var(--body-font-family);
+}
+
+h1 {
+ font-family: sans-serif;
+    color: rgba(203, 206, 219, 0.973);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0); 
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.colorbox {
+    background-color: rgb(252, 251, 251);
+    padding: 7px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px 4px #332e2e;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.colorbox input {
+    margin-left: 7px;
+    margin-bottom: 7px;
+    outline: none;
+    border: none;
+    border: 1px solid #706e6e;  
+}
+
+.color{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgba(39, 37, 37, 0.877);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.code{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgba(39, 37, 37, 0.877);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.fs{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgba(39, 37, 37, 0.877);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+input[type="color"] {
+    width: 50%;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 3px;
+    font-size: 1rem;
+}
+
+.coma {
+    margin-left: 78px;
+    margin-right: 20px;
+}
+
+.coma2 {
+    margin-left: 32px;
+    margin-right: 20px;
+}
+
+.font {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+button {
+    padding: 7px;
+    margin-top: 8px;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #b1afaf;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: transparent;
+    height: 35px;
+    width: 18%;
+}
+
+button:hover{
+    background-color: rgb(64, 46, 124);
+    color: #fff;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.font-size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="range"] {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 80%;
+    height: 32vh;
+    padding: 10px;
+    margin-left: 78px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.font-size span {
+    transform: translateY(-9px);
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+.fs {
+    transform: translate(-10px, -9px);
+}
+
+/* media queries */
+@media(max-width: 1100px) {
+    textarea {
+        height: 42vh;
+    }
+
+    input[type="color"] {
+        width: 51.6%;
+    }
+}
+
+@media(max-width: 1050px) {
+    textarea {
+        height: 41vh;
+    }
+
+    input[type="color"] {
+        width: 54.3%;
+    }
+}
+
+@media(max-width: 1000px) {
+    input[type="color"] {
+        width: 57.5%;
+    }
+}
+
+@media(max-width: 950px) {
+    input[type="color"] {
+        width: 60.5%;
+    }
+}
+
+@media(max-width: 900px) {
+    input[type="color"] {
+        width: 64%;
+    }
+}
+
+@media(max-width: 850px) {
+    .colorbox {
+        width: 59%;
+    }
+
+    input[type="color"] {
+        width: 63.5%;
+    }
+}
+
+@media(max-width: 800px) {
+    .colorbox {
+        width: 62%;
+    }
+
+    input[type="text"] {
+        width: 63.5%;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media(max-width: 750px) {
+    .colorbox {
+        width: 65%;
+    }
+}
+
+@media(max-width: 700px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media(max-width: 650px) {
+    .container {
+        width: 81%;
+    }
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 87%;
+    }
+}
+
+@media(max-width: 550px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media(max-width: 500px) {
+    .colorbox {
+        width: 73%;
+    }
+}
+
+@media(max-width: 450px) {
+    .colorbox {
+        width: 80%;
+    }
+}
+
+@media(max-width: 425px) {
+    .colorbox {
+        width: 86%;
+    }
+}
+
+@media(max-width: 400px) {
+    .colorbox {
+        width: 91%;
+    }
+}
+
+@media(max-width: 350px) {
+    input[type="color"] {
+        width: 57%;
+    }
+    
+    input[type="text"] {
+        width: 57%;
+    }
+}
+
+@media(max-width: 375px) {
+    .colorbox {
+        width: 97%;
+    }
+}
+
+@media(max-width: 320px) {
+    .colorbox {
+        width: 98%;
+    }
+}
+
+@media(max-width: 300px) {
+    input[type="color"] {
+        width: 50%;
+    }
+    
+    input[type="text"] {
+        width: 50%;
+    }
+}
+
+@media(max-width: 280px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        height: 90vh;
+    }
+}
+
+@media(max-width: 250px) {
+    .container {
+        height: 83vh;
+    }
+
+    .colorbox {
+        width: 99%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    input[type="color"] {
+        width: 43%;
+    }
+    
+    input[type="text"] {
+        width: 43%;
+    }
+
+    textarea {
+        height: 34vh;
+    }
+}
